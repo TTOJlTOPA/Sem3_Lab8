@@ -49,10 +49,10 @@ public class Sort implements Runnable {
 
     private Integer lengthOfNumber(Integer number) {
         Integer counter = 0;
-        while (number.compareTo(0) != 0) {
+        do {
             number /= 10;
             counter++;
-        }
+        } while (number != 0);
         return counter;
     }
 }
